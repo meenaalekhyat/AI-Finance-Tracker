@@ -63,10 +63,4 @@ The **AI Finance Tracker** is an application that helps users track their financ
 
 2. Follow the on-screen instructions to track your finances.
 
-### Example:
 
-```python
-import finance_tracker as ft
-
-data = ft.load_data("financial_data.csv")
-ft.predict_trends(data)
