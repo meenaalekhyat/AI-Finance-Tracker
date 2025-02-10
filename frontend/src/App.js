@@ -4,6 +4,7 @@ import ExpenseForm from "./components/ExpenseForm";
 import IncomeForm from "./components/IncomeForm";
 import TransactionList from "./components/TransactionList";
 import ExpenseChart from "./components/ChartDivision";
+import ExpensePredictor from "./components/ExpensePredictor";
 
 function App() {
   const [summary, setSummary]=useState({total_expense:0, total_income: 0});
@@ -46,6 +47,10 @@ function App() {
 
       <div>
         <ExpenseChart refreshData={fetchSummary}/>
+      </div>
+
+      <div>
+        <ExpensePredictor refreshData={fetchSummary}/>
       </div>
       
     </div>
